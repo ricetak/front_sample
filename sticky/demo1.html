@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+
+<title>テストページ</title>
+
+<style>
+
+html{
+	min-height: 100%;
+	position: relative;
+}
+
+body{
+	color:#000;
+	font-size:15px;
+	margin:0px auto;
+	padding:0px 0px;
+	line-height:140%;
+	min-height: 100%;
+	overflow-x: hidden;
+	background-color: #ffffff;
+}
+
+.header {
+	width: 1000px;
+	height: 80px;
+	background-color: #ddd;
+	margin-bottom: 10px;
+}
+
+h1,h2 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	line-height: 50px;
+}
+
+.wrap {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.container {
+ 	width: 980px;
+	display: -webkit-flex;
+	display: flex;
+	margin-bottom: 20px;
+	margin:0 auto;
+	text-align:left;
+	white-space:normal;
+	word-break:break-all;
+	margin-bottom: 20px;
+}
+
+.main {
+	display: block;
+	width: 660px;
+	margin-right: 20px;
+	background-color: #ddd;
+	padding:8px;
+	padding-bottom:30px;
+}
+
+.sidebar {
+	display: block;
+	width: 320px;
+}
+
+.sidebar_item {
+	background-color: #ddd;
+	margin-bottom: 20px;
+	padding:8px;
+}
+
+.sidebar_item_fixed {
+	background-color: #e4b6b6;
+ 	position: sticky;
+ 	position: -webkit-sticky;
+ 	margin-bottom: 0;
+ 	top: 10px;
+ 	z-index: 1;
+}
+
+.footer {
+	position: absolute;
+	background:#595959;
+	width: 1000px;
+	background-color: #ddd;
+	height: 100px;
+	bottom:0px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<div class="entry-content">
+	<div class="wrap">
+		<header id="header" class="header">
+			<h2>歴史チャンネル test</h2>
+		</header>
+
+		<div class="container">
+			<main class="main">
+				<h1>メイン部</h1>
+				<p style="text-align: center;"></p>
+				
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				
+				XXX
+			</main>
+			<div class="sidebar">
+				<div class="sidebar_item">
+					<h2>サイドバー</h2>
+					<br><br><br><br><br><br><br><br><br>
+				</div>
+				<div class="sidebar_item sidebar_item_fixed">
+					<h2>固定されるエリア</h2>
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				</div>
+			</div>
+		</div>
+
+		<div style="padding-bottom:100px;"></div>
+
+		<footer class="footer">
+			<h2>フッター</h2>
+		</footer>
+	</div>
+</div>
+
+</body>
+
+</html>
