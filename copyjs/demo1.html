@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>JS Copy Demo</title>
+
+<style>
+
+</style>
+
+<script>
+function copy_to_clipboard() {
+	
+	var copy_target = document.getElementById("copy_target");
+	
+	if(!copy_target.value){
+		//alert(copy_target.value);
+		return false;
+	}
+	
+	copy_target.select();
+
+    document.execCommand("Copy");
+
+    var msg = document.getElementById("msg");
+    msg.innerHTML = "Copy ( " + copy_target.value.substr(0,10) + " ...)";
+    
+
+}
+</script>
+
+</head>
+
+<body>
+
+	<div id="msg" style="margin-bottom: 5px;"></div>
+
+	<div>
+    	<textarea id="copy_target" onclick="copy_to_clipboard()" style="width:300px; height:100px;"></textarea>
+	</div>
+	
+</body>
+
+</html>
+
+
